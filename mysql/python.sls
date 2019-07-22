@@ -4,4 +4,5 @@ include:
   - mysql
 
 install_mysql_python_package:
-  - name: {{ mysql.python_package }}
+  pkg.installed:
+    - name: {{ mysql.python_package }}
