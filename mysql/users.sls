@@ -1,16 +1,17 @@
 wordpress_mysql_user:
   mysql_user.present:
     - name: wordpress_user
-    - host: 10.242.228.26
+    - password: {{ pillar['mysql']['wordpress_user']['password'] }}
+    - host: {{ pillar['mysql']['server']['bind_address'] }}
     - connection_user: root
-    - connection_pass:
+    - connection_pass: {{ pillar['mysql']['root']['password'] }}
     - connection_charset: utf8
 
 wordpress_user_grants:
   mysql.grants_present:
     - database: wordpress.*
-    - user: wpuser
+    - user: wordpress_user
     - grant: ALL PRIVILEGES
     - connection_user: root
-    - connection_pass:
+    - connection_pass: {{ pillar['mysql']['root']['password'] }}
     - connection_charset: utf8
