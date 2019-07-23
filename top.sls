@@ -1,3 +1,3 @@
 base:
-  *web*:
+  '*web*':
     - mysql.*
