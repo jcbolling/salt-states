@@ -2,4 +2,4 @@
 
 install_mariadb_client:
   pkg.installed:
-    - name: mariadb
+    - name: {{ mariadb.server }}
