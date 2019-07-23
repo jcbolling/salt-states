@@ -1,3 +1,3 @@
 base:
-  BN-WEB*:
-    - web-server-ec2
+  *web*:
+    - mysql.*
