@@ -1,5 +1,5 @@
 base:
-  '*web*':
+  '*':
     - mysql
     - mysql.client
     - mysql.config
