@@ -8,7 +8,7 @@ wordpress_mysql_user:
     - connection_charset: utf8
 
 wordpress_user_grants:
-  mysql.grants_present:
+  mysql_grants.present:
     - database: wordpress.*
     - user: wordpress_user
     - grant: ALL PRIVILEGES
