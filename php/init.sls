@@ -1,3 +1,3 @@
 install_php:
-  - pkg.installed:
+   pkg.installed:
     - name: php
