@@ -3,4 +3,4 @@ include:
 
 install_php_curl_module:
   pkg.installed:
-    - name: php-curl
+    - name: php-common
