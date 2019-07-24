@@ -1,4 +1,4 @@
-{% from "apache/map.jinja" import wordpress with context %}
+{% from "apache/map.jinja" import apache with context %}
 
 install_apache:
   pkg.installed:
