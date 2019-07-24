@@ -1,0 +1,5 @@
+{% set apache = salt['grains.filter_by']({
+  'RedHat': {
+     'package': 'httpd',
+  },
+})%}
