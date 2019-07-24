@@ -1,4 +1,4 @@
-{% from wordpress/map.jinja import wordpress with context %}
+{% from "wordpress/map.jinja" import wordpress with context %}
 
 download_and_install_wpcli_tool:
   file.managed:
