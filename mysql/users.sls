@@ -11,6 +11,7 @@ wordpress_user_grants:
   mysql_grants.present:
     - database: wordpress.*
     - user: wordpress_user
+    - host: {{ pillar['mysql']['server']['bind_address'] }}
     - grant: ALL PRIVILEGES
     - connection_user: root
     - connection_pass: {{ pillar['mysql']['root']['password'] }}
