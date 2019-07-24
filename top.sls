@@ -7,4 +7,4 @@ base:
     - mysql.python
     - mysql.root
     - mysql.users
-    - wordpress
+    - wordpress.*
