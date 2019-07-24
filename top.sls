@@ -8,4 +8,4 @@ base:
     - mysql.root
     - mysql.users
     - wordpress.wpcli
-    - httpd
+    - apache
