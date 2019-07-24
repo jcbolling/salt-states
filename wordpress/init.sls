@@ -15,4 +15,4 @@ download_wordpress:
   cmd.run:
     - name: 'wp core download --path="{{ wordpress.document_root }}"'
     - runas: {{ wordpress.user }}
-    - unless: test -f {{ wordpress.docroot }}/wp-config.php
+    - unless: test -f {{ wordpress.document_root }}/wp-config.php
