@@ -1,13 +1,13 @@
 install_php:
-   pkg.installed:
+  pkg.installed:
     - name: yum-utils
 
 install_epel_release:
-   pkg.installed:
+  pkg.installed:
     - name: epel-release
 
 install_remi_repository:
-  - pkg.installed:
+  pkg.installed:
     - sources:
       - remi-release-7: http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
