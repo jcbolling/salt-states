@@ -11,7 +11,7 @@ install_remi_repository:
     - sources:
       - remi-release-7: http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-emable_remi_repository:
+enable_remi_repository:
   cmd.run:
     - name: yum-config-manager --enable remi-php56
 
