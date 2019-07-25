@@ -21,5 +21,4 @@ install_php_56:
     - require:
       - pkg: install_yum_utils
       - pkg: install_epel_release
-      - pkg: install_remi_repository
       - cmd: enable_remi_repository
